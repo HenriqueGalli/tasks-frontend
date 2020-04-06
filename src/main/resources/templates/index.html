@@ -1,3 +1,23 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@HenriqueGalli 
+wcaquinocursos
+/
+tasks-frontend
+0
+034
+ Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights
+tasks-frontend/src/main/resources/templates/index.html
+@wcaquino wcaquino Versão inicial do projeto
+40462c6 22 days ago
+49 lines (46 sloc)  1.49 KB
+  
 <html>
 
 <head>
@@ -12,7 +32,7 @@
 			<h1>Tasks</h1>
 			<p class="lead">A very simple task management tool</p>
 		</div>
-		<p class="alert alert-success" role="alert" th:if="${success != null}" th:text="${success}" id="message" />
+		<p class="alert alert-success" role="alert" th:if="${sucess != null}" th:text="${sucess}" id="message" />
 		<div th:switch="${todos.size()}">
     		<h2 th:case="0">No tasks... enjoy your day!</h2>
         	<div th:case="*">
